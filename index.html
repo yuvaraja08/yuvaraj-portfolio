@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yuvaraj A| DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ffc8;
+      --secondary: #0d0d0d;
+      --accent: #ff5ec5;
+      --bg-light: #181818;
+      --text: #e6fff9;
+      --gradient: linear-gradient(135deg, #00ffc8 0%, #ff5ec5 100%);
+      --card-bg: rgba(24,24,24,0.98);
+    }
+    body {
+      background: var(--secondary);
+      background: linear-gradient(120deg, #0d0d0d 0%, #1a1a40 50%, #ff5ec5 100%);
+      color: var(--text);
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      animation: bgmove 12s ease-in-out infinite alternate;
+    }
+    @keyframes bgmove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    header {
+      background: var(--bg-light);
+      padding: 24px 0 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border-bottom: 2px solid var(--primary);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 8px;
+    }
+    nav a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s, text-shadow 0.2s;
+      text-shadow: 0 0 8px #00ffc8, 0 0 2px #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      color: #fff;
+      background: var(--accent);
+      text-shadow: 0 0 12px #ff5ec5, 0 0 2px #fff;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto 0 auto;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(0,255,200,0.12), 0 2px 24px 0 #ff5ec533;
+      padding: 48px 36px 36px 36px;
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--primary);
+      animation: fadein 1.2s;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .profile-img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--primary);
+      box-shadow: 0 0 32px 0 #ff5ec5cc, 0 0 16px 0 #00ffc8cc;
+      background: #222;
+      transition: box-shadow 0.3s;
+      animation: glow 2.5s infinite alternate;
+    }
+    @keyframes glow {
+      0% { box-shadow: 0 0 32px 0 #ff5ec5cc, 0 0 16px 0 #00ffc8cc; }
+      100% { box-shadow: 0 0 48px 8px #00ffc8cc, 0 0 32px 8px #ff5ec5cc; }
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 0 0 10px;
+      color: transparent;
+      background: var(--gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+      text-align: center;
+      text-shadow: 0 2px 12px #00ffc8cc;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      background: linear-gradient(90deg, #00ffc8 0%, #ff5ec5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 8px #ff5ec544;
+    }
+    p, ul {
+      max-width: 700px;
+      margin: 0 auto 18px auto;
+      text-align: left;
+    }
+    ul {
+      list-style: disc inside;
+      padding-left: 18px;
+    }
+    li {
+      margin: 6px 0;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      background: linear-gradient(90deg, #00ffc822 0%, #ff5ec522 100%);
+      border-radius: 8px;
+      padding: 4px 10px;
+      margin-bottom: 6px;
+      transition: background 0.2s;
+    }
+    li:hover {
+      background: linear-gradient(90deg, #ff5ec5 0%, #00ffc8 100%);
+      color: #fff;
+    }
+    .links {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      margin: 18px 0 0 0;
+    }
+    .links a {
+      color: #fff;
+      background: var(--gradient);
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      padding: 8px 18px;
+      box-shadow: 0 2px 12px #00ffc855, 0 2px 12px #ff5ec555;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      text-shadow: 0 0 8px #00ffc8, 0 0 2px #fff;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .links a:hover {
+      background: linear-gradient(90deg, #ff5ec5 0%, #00ffc8 100%);
+      color: #fff;
+      box-shadow: 0 4px 24px #ff5ec5cc, 0 4px 24px #00ffc8cc;
+    }
+    blockquote {
+      margin: 36px auto 0 auto;
+      font-style: italic;
+      color: #fff;
+      text-align: center;
+      font-size: 1.2rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 16px;
+      max-width: 600px;
+      background: linear-gradient(90deg, #00ffc822 0%, #ff5ec522 100%);
+      border-radius: 10px;
+      box-shadow: 0 2px 12px #ff5ec555;
+    }
+    footer {
+      background: var(--bg-light);
+      color: #fff;
+      text-align: center;
+      padding: 18px 0 10px 0;
+      font-size: 1.05rem;
+      letter-spacing: 1px;
+      border-top: 2px solid #ff5ec5;
+      /* Removed invalid box-shadow color */
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 18px 6px 18px 6px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      .profile-img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="profile-img-wrapper">
+      <img src="profile.jpg" alt="Yuvaraj Profile Photo" class="profile-img">
+    </div>
+    <h1>⚡️ Yuvaraj A👾</h1>
+    <p style="text-align:center;"><strong>🎮 Gamer at heart | ⚙️ DevOps Engineer | ☁️ Cloud Explorer</strong></p>
+
+    <h2 id="about">🔥 About Me</h2>
+    <p>I'm Yuvaraj — passionate about building, automating, and deploying solutions in the cloud. I thrive on solving problems, optimizing workflows, and learning new technologies. When I’m not deploying containers, you’ll find me gaming or exploring the latest in tech!</p>
+
+    <h2 id="projects">🚀 Projects</h2>
+    <ul>
+      <li>🖥️ <a href="https://github.com/yuvaraja08/yuvaraj-static-site" target="_blank">Static Website Deployment</a></li>
+      <li>🛠️ CI/CD Pipeline Automation <span style="color:#888;">(Coming Soon)</span></li>
+      <li>🛠️ Monitoring with Prometheus & Grafana <span style="color:#888;">(Coming Soon)</span></li>
+      <li>🛠️ Cloud Deployments on AWS/Azure <span style="color:#888;">(Coming Soon)</span></li>
+    </ul>
+
+    <h2 id="certifications">🎓 Certifications</h2>
+    <ul>
+      <li>☁️ AWS Certified Cloud Practitioner <span style="color:#888;">(In Progress)</span></li>
+      <li>☁️ Azure Fundamentals AZ-900 <span style="color:#888;">(In Progress)</span></li>
+    </ul>
+
+    <h2 id="skills">🕹️ Skills</h2>
+    <ul>
+      <li><strong>DevOps:</strong> Docker, Kubernetes, Git, GitHub Actions, Jenkins, Prometheus, Grafana</li>
+      <li><strong>Cloud:</strong> AWS, Azure</li>
+      <li><strong>Languages:</strong> Bash, YAML, Markdown</li>
+      <li><strong>Mindset:</strong> Gamer 🕹️ — solve problems under pressure!</li>
+    </ul>
+
+    <h2 id="kubernetes">☸️ What is Kubernetes?</h2>
+    <p>
+      Kubernetes is an open-source platform that automates the deployment, scaling, and management of containerized applications. It helps ensure your applications run reliably and efficiently by handling tasks like load balancing, self-healing, rolling updates, and service discovery. Kubernetes is widely used in the industry to manage production workloads at scale.
+    </p>
+
+    <h2 id="connect">📫 Connect</h2>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/yuvaraj-a-0681b9252/" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/yuvaraja08" target="_blank">💻 GitHub</a>
+      <a href="mailto:yuvaraja8824@gmail.com">📧 Email Me</a>
+      <a href="tel:+916362531028">📞 Call Me</a>
+    </div>
+
+    <blockquote>"Keep shipping, keep gaming, keep learning!" ⚡️🚀</blockquote>
+  </div>
+  <footer>
+    &copy; 2025 Yuvaraj. All rights reserved. | Designed with passion & professionalism.
+  </footer>
+</body>
+</html>
