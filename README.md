@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Yuvaraj Portfolio
 
 This is a professional portfolio website for Yuvaraj A, built with HTML/CSS and containerized using Docker. You can deploy it on GitHub Pages for public access, or use Docker/Kubernetes for cloud deployment.
@@ -78,3 +79,6 @@ This is a professional portfolio website for Yuvaraj A, built with HTML/CSS and 
 ---
 
 Feel free to fork, star, and share your own portfolio!
+=======
+# yuvaraj-portfolio
+>>>>>>> 3121f6ef2c2652b42a46c7c67534653f9cddcfb0
