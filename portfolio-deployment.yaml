@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yuvaraj-portfolio
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: yuvaraj-portfolio
+  template:
+    metadata:
+      labels:
+        app: yuvaraj-portfolio
+    spec:
+      containers:
+      - name: portfolio
+        image: yuvaraj088/yuvaraj-portfolio:latest
+        ports:
+        - containerPort: 80
